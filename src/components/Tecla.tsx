@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Howl } from 'howler';
 import './Tecla.css';
@@ -7,13 +6,12 @@ type TeclaProps = {
   nota: string;
   activa: boolean;
   onClick: () => void;
+  esNegra?: boolean; // Nueva propiedad para identificar si es una tecla negra
 };
 
-const Tecla: React.FC<TeclaProps> = ({ nota, activa, onClick }) => {
-  
-  // Cargar el sonido correspondiente para cada nota en formato .wav
+const Tecla: React.FC<TeclaProps> = ({ nota, activa, onClick, esNegra = false }) => {
   const sonido = new Howl({
-    src: [`/sounds/${nota}.wav`], // Usamos la ruta .wav
+    src: [`/sounds/${nota}.wav`],
     volume: 1,
   });
 
@@ -23,7 +21,10 @@ const Tecla: React.FC<TeclaProps> = ({ nota, activa, onClick }) => {
   };
 
   return (
-    <button className={`tecla ${activa ? 'activa' : ''}`} onClick={reproducirNota}>
+    <button
+      className={`tecla ${esNegra ? 'negra' : 'blanca'} ${activa ? 'activa' : ''}`}
+      onClick={reproducirNota}
+    >
       {nota}
     </button>
   );

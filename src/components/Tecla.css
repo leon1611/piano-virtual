@@ -1,14 +1,58 @@
+.teclado-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 60px); /* Columnas para cada tecla blanca */
+  gap: 2px;
+  position: relative;
+}
+
+/* Posiciones específicas para cada tecla negra */
+.tecla.negra:nth-child(2) {
+  left: 45px; /* C# */
+}
+
+.tecla.negra:nth-child(4) {
+  left: 105px; /* D# */
+}
+
+.tecla.negra:nth-child(7) {
+  left: 225px; /* F# */
+}
+
+.tecla.negra:nth-child(9) {
+  left: 285px; /* G# */
+}
+
+.tecla.negra:nth-child(11) {
+  left: 345px; /* A# */
+}
 
 .tecla {
-    width: 70px;
-    height: 160px;
-    background-color: white;
-    border: 1px solid black;
-    margin: 2px;
-    cursor: pointer;
-  }
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px; /* Tamaño de fuente pequeño para mayor sutileza */
+  color: #666; /* Color gris suave para un aspecto menos llamativo */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 4px; /* Ajusta la posición del texto */
+}
+
+.tecla.blanca {
+  width: 60px;
+  height: 160px;
+  background-color: white;
+}
+
+.tecla.negra {
+  width: 40px;
+  height: 100px;
+  background-color: black;
+  color: #bbb; /* Color gris claro para las notas en teclas negras */
+  font-size: 10px; /* Tamaño de fuente ligeramente más pequeño para teclas negras */
+  z-index: 1;
+  background-color: black;
+  position: absolute;
   
-  .tecla.activa {
-    background-color: rgb(0, 251, 255);
-  }
-  
+}
+

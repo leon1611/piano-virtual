@@ -1,6 +1,29 @@
+/* Aseguramos que `html` y `body` ocupen el 100% de la altura */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Configuración del contenedor principal */
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
 .piano-page {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+}
