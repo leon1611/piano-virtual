@@ -1,6 +1,32 @@
+/* Aseguramos que `html` y `body` ocupen el 100% de la altura y tengan el color de fondo */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #10086855; /* Color de fondo */
+}
+
+/* Configuración del contenedor principal */
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: #10086855; /* Color de fondo para asegurar cobertura */
+}
 
 .piano-page {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  background-color: #10086855; /* Color de fondo para asegurar cobertura */
+}
