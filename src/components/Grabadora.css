@@ -1,0 +1,13 @@
+
+.grabadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .notas-grabadas {
+    margin-top: 10px;
+    font-style: italic;
+  }
+  

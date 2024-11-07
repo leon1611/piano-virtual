@@ -1,0 +1,41 @@
+.teclado-container {
+  display: flex;
+  flex-direction: column; /* Disposición en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  padding: 20px;
+  background-color: #10086855;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  margin: 0; /* Elimina cualquier margen exterior */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  margin-bottom: 20px; /* Añade un espacio debajo de la imagen */
+}
+
+.image-section img {
+  max-width: 70%; /* Asegura que la imagen no se desborde */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.piano-section {
+  display: flex;
+  justify-content: center; /* Centra el contenido del piano horizontalmente */
+  align-items: center; /* Centra el contenido del piano verticalmente */
+}
+
+.teclado-box {
+  background-color: #333; /* Fondo oscuro */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados, puedes ajustar el valor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar un efecto elevado */
+}
+
+.teclado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

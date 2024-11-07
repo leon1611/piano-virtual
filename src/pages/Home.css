@@ -1,0 +1,35 @@
+/* Home.css */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  background-image: url('https://thumbs.dreamstime.com/b/cat-musician-recording-studio-captured-modern-digital-painting-where-wearing-headphones-plays-piano-guitar-music-336036754.jpg'); /* Añade la ruta de tu imagen */
+  background-size: cover; /* Cubre todo el fondo */
+  background-position: center; /* Centra la imagen */
+}
+
+
+h1 {
+  font-size: 3rem; /* Tamaño de fuente grande */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.inicio-btn {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  font-size: 1.2rem; /* Tamaño de fuente del botón */
+  background-color: #61dafb; /* Color azul claro */
+  color: #282c34; /* Color de texto oscuro */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por el botón */
+  transition: background-color 0.3s; /* Animación suave al pasar el cursor */
+}
+
+.inicio-btn:hover {
+  background-color: #21a1f1; /* Cambia el color al pasar el cursor */
+}

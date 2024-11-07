@@ -1,0 +1,14 @@
+
+.tecla {
+    width: 70px;
+    height: 160px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  .tecla.activa {
+    background-color: rgb(0, 251, 255);
+  }
+  
